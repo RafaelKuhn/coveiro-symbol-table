@@ -19,7 +19,7 @@ const palavrasReservadas = [
 	"ate",
 	"carac",
 	"caracpnum",
-	"Caracter",
+	"caracter", // estava como "Caracter",
 	"caractere",
 	"caso",
 	"compr",
@@ -130,7 +130,7 @@ for (const palavraReservada of palavrasReservadas) {
 
 const processa = () => {
 	console.log("processando");
-	const textoDaIde = editor.getValue();
+	const textoDaIde = editor.getValue().toLowerCase();
 	
 	// for (const palavraReservada of palavrasReservadas) {
 	for (let i = 0; i < palavrasReservadas.length; ++i) {
